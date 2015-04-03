@@ -25,10 +25,6 @@ WORKDIR /opt/zato
 COPY zato_odb.config /opt/zato/
 COPY zato_cluster.config /opt/zato/
 
-COPY zato_from_config_create_odb /opt/zato/
-COPY zato_from_config_create_cluster /opt/zato/
-
-
 RUN wget -P /opt/zato \
      https://raw.githubusercontent.com/andy-wr/zato-docker/master/odb_cluster/zato_from_config_create_odb
 RUN wget -P /opt/zato \
